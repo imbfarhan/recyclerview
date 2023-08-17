@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="60dp">
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/boy1">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imageview"
+            android:text="Test"
+            android:textColor="@color/black"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/textview"
+            android:text="10:43AM"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textview"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageview"
+            android:text="How are you?"
+
+            android:textSize="15sp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
